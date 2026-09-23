@@ -236,6 +236,12 @@ app.put('/api/site', requireAuth, (req, res) => {
 
 app.get('/admin', (req, res) => renderSite(req, res, true));
 
+app.get("/healthCheck",(req,res)=>{
+  return res.status(200).json({
+    status:"ok"
+  })
+})
+
 function publicPage(req, res) {
   // Admin edit mode still loads the public page, so it can edit the exact same DOM.
   recordVisit();
