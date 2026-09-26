@@ -35,20 +35,6 @@ http://localhost:3000/admin
 
 Do **not** open `index.ejs` with VS Code Live Server. The Node server must serve the website so `/admin` and `/api/*` use the same origin.
 
-## Admin credentials
-
-Default username:
-
-```text
-admin
-```
-
-Default password:
-
-```text
-DixitAdmin#2026!
-```
-
 For deployment, set environment variables instead of relying on the defaults:
 
 ```text
